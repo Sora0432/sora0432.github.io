@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column; 
+}
+
+div {
+    font-family: 'Monocraft';
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid #333;
+    border-radius: 0.5em;
+
+    padding: 10px;
+    margin: 10px;
+
+    width: 40%;
+    height: max-content;
+}
+
+div:nth-child(2n) {
+    align-self: flex-end;
+    margin-top: 0;
+}
+
+p {
+    text-align: center;
+    margin: 2px;
+}
