@@ -12,6 +12,10 @@ body {
     padding: 0;
 }
 
+section {
+    font-family: 'Monocraft';
+}
+
 ul {
     list-style-type: none;
     margin: 0;

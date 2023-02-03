@@ -1,11 +1,10 @@
 body {
-    display: flex;
-    flex-direction: column; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 
-div {
-    font-family: 'Monocraft';
-
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,9 +19,14 @@ div {
     height: max-content;
 }
 
-div:nth-child(2n) {
+section:nth-of-type(2n) {
     align-self: flex-end;
     margin-top: 0;
+}
+
+img:nth-of-type(n) {
+    max-width: 100px;
+    max-height: auto;
 }
 
 p {
